@@ -1,0 +1,8 @@
+# Local runtime/private material must not enter this public instruction repository.
+worklog/
+worklog-*/
+.env
+.env.*
+!.env.example
+*.log
+.DS_Store
