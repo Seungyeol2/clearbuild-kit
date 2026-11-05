@@ -7,7 +7,7 @@
 - A: `clearbuild-kit/prompts/start_a.md를 읽고 진행해.`
 - B: `clearbuild-kit/prompts/start_b.md를 읽고 진행해.`
 - C: `clearbuild-kit/prompts/start_c.md를 읽고 진행해.`
-프롬프트 안의 CORE.md와 roles 경로는 이 저장소 루트 기준이다. 필요하면 명시적으로 `clearbuild-kit/CORE.md`처럼 전체 경로를 알려준다. A가 계약을 만들기 전 B/C는 독립적인 환경·자료 조사만 한다.
+프롬프트 안의 CORE.md와 roles 경로는 이 저장소 루트 기준이다. 필요하면 명시적으로 `clearbuild-kit/CORE.md`처럼 전체 경로를 알려준다. 계약 전 B는 충돌 없이 분리 가능한 웹 뼈대를 먼저 구현하고, C는 독립적인 자료 조사를 진행한다. 공통 계약이나 다른 세션 담당 파일을 임의로 확정·수정하지 않는다.
 
 ## 협업 파일
 A가 실제 프로젝트의 비어 있는 worklog 폴더에 templates/PROJECT.md, DECISIONS.md를 복사하고 HANDOFF.md를 B_HANDOFF.md와 C_HANDOFF.md로 각각 복사한다. 충돌 시 기존 파일을 덮어쓰지 말고 새 경로를 사용자와 정한다. A는 PROJECT와 DECISIONS, B와 C는 자기 HANDOFF만 작성한다. 세션 간 대화는 자동 공유되지 않는다. 작업 경계에서 각 세션이 자신의 수신 파일을 읽고, 끝난 턴에는 사용자가 다시 읽으라고 한 줄 알린다. 담당자 답변은 사용자가 원문을 A에 붙여넣는다. 시험 규칙이 허용하면 [세션 전달 안내](SESSION_HANDOFFS.md)의 선택적 `status/read/ack`와 짧은 `watch`로 복사를 줄일 수 있다. watch는 살아 있는 명령 안에서만 동작하며 종료된 세션을 깨우지 않는다. 먼저 실제 공유 폴더 왕복 확인을 한다.
