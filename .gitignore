@@ -6,3 +6,8 @@ worklog-*/
 !.env.example
 *.log
 .DS_Store
+
+# Local handoff receipts and Python test caches.
+.clearbuild/
+__pycache__/
+*.pyc
